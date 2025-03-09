@@ -1,3 +1,75 @@
-<html>
-<title>Pake css ini</title>
-</html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cahaya</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 90vh;
+            background: #f4f4f4;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        p {
+            margin-top: 0%;
+            margin-right: 0%;
+            padding: 0%;
+        }
+
+        .container {
+            display: flex;
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .left {
+            padding: 20px;
+            width: 300px;
+            background: url('asset/bintang.jpg') no-repeat center center;
+            
+            border-radius: 10px;
+        }
+
+        .right {
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="left">
+
+        </div>
+        <div class="right">
+            <h1>Register</h1><br>
+            <form action="login.html" method="GET" enctype="multipart/form-data"></form>
+                <label>Username</label>
+                <input type="text" name="username" placeholder="Username..." required/><br><br>
+                <label>Email</label>
+                <input type="email" name="email" placeholder="Email..." required/><br><br>
+                <label>Foto Profil</label>
+                <input type="file" name="fotoprofil" accept="image/*" required/><br><br>
+                <label>Password</label>
+                <input type="password" name="Password" placeholder="Password..." required/><br><br>
+                <div style="text-align: end;padding: 0%;margin: 0;">
+                    <p>Sudah punya akun? <a href="login.html">Sudah</a></p>
+                </div>
+                <input type="submit" name="submit" value="Daftar" style="width: 100%;"/>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
